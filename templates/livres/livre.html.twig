@@ -1,0 +1,20 @@
+{# templates/livres/livre.html.twig #}
+{% extends 'base.html.twig' %}
+{% block title %}Bienvenue !{% endblock %}
+{% block body %}
+<div class="col px-md-2">
+    <h2>Vous avez choisi le livre : {{ idLivre }}</h2>
+    <p>Voici la description complète du livre :</p>
+</div>
+
+  <div class="card w-75 text-center col-6 mx-auto">
+
+    <div class="card-body">
+
+      <h5 class="card-title">{{ idLivre }}</h5>
+      <p class="card-text">La Braise est le deuxième et dernier roman de la série Avant le labyrinthe écrite par James Dashner et constituée de préquelles à la série L'Épreuve. Ce roman de science-fiction a été publié pour la première fois aux États-Unis en 2016 puis a été traduit en français et publié en 2017 aux éditions Pocket Jeunesse. Cet ouvrage marque la fin définitive du cycle littéraire L'Épreuve.</p>
+
+    </div>
+
+
+{% endblock %}

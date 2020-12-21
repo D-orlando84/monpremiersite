@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}{% endblock %} - Bienvenue</title>
+        {% block stylesheets %}
+            <link href={{ asset('css/form.css') }} rel="stylesheet" type="text/css" media="all" />
+        {% endblock %}
+    </head>
+    <body>{% block body %}
+            <h1>{% block h1 %}{% endblock %} Bonjour tout le monde</h1>
+            <div class="carre-rouge" ></div>
+            <div class="cercle-bleu" ></div>
+            <div class="rectangle-vert" ></div>
+
+        {% endblock %}
+    </body>
+</html>

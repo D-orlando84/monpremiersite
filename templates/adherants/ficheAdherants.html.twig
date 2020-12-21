@@ -1,0 +1,19 @@
+{# templates/adherants/adherants.html.twig #}
+{% extends 'base.html.twig' %}
+{% block title %}Bienvenue !{% endblock %}
+{% block body %}
+<div class="col px-md-2">
+    <h2>Vici la fiche adherent de: {{ficheAd[idAdherants].nom }}</h2>
+</div>
+
+  <div class="card w-75 text-center col-6 mx-auto">
+
+    <div class="card-body">
+        Id: {{ficheAd[idAdherants].id}}<br></br>
+        Nom: {{ficheAd[idAdherants].nom}}<br></br>
+        Prénom: {{ficheAd[idAdherants].prenom}}<br></br>
+        Age: {{ficheAd[idAdherants].age}}<br></br>
+    </div>
+
+
+{% endblock %}

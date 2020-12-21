@@ -1,0 +1,17 @@
+{# templates/livres/listeLivres.html.twig #}
+{% extends 'base.html.twig' %}
+{% block title %}Bienvenue !{% endblock %}
+{% block body %}
+
+<div class="col px-md-2">
+  <h2>Voici les livres disponibles</h2>
+</div>
+<ul>
+    {% for elt in livre %}
+    <a href="/index.php/livres/{{ elt['Titre'] }}">
+    <li>{{ elt['Titre'] }}</li>
+    {{ elt['Description'] }}
+    <p>Collection : {{elt['Collection'] }}</p>
+  {% endfor %}
+</ul>
+{% endblock %}

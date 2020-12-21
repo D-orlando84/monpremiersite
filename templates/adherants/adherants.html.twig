@@ -1,0 +1,15 @@
+{# templates/adherants/adherants.html.twig #}
+{% extends 'base.html.twig' %}
+{% block title %}Bienvenue !{% endblock %}
+{% block body %}
+
+<div class="col px-md-2">
+  <h2>Voici les Adhérants</h2>
+</div>
+<ul>
+    {% for element in adherants %}
+    <li><p> Nom: {{ element['nom']}} </p></li>
+    <a href="{{ path('fiche_adherants', {idAdherants: element['id']}) }}">Aficher la fiche Adherant</a>
+    {% endfor %}
+</ul>
+{% endblock %}

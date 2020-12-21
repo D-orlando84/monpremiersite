@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+{% import './macros/form.html.twig' as class %}
+{% block body %}
+<div class="container"></div>
+
+<style>
+	.carre-rouge{ height: 30px; width: 30px; background: red;}
+	.cercle-bleu{ width: 40px; height: 40px; border-radius: 20px; background: blue;}
+	.rectangle-vert{ width:40px; height:20px; background:green;}
+</style>
+
+{{ aireCercle(3)}}<br></br>
+{{ calculVolume(4)}}<br></br>	
+{{email('salut-gmail.com')}}
+{{ class.carre('carre-rouge') }}
+{{ class.carre('cercle-bleu') }}
+{{ class.carre('rectangle-vert') }}
+
+{% endblock %}
