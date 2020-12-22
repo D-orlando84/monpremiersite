@@ -1,0 +1,11 @@
+{# templates/macros/listeProduit.html.twig #}
+{% macro liste(produit) %}
+{% for elt in produit %}
+    Nom : {{ elt['nom'] }}<br></br>
+    Titre : {{ elt['titre'] }}<br></br>
+    Code Barre : {{ elt['ean13'] }}<br></br>
+    Prix : {{ elt['prix'] }}<br></br>
+    Image : <img src='{{ asset('/image/'~ elt['image']~ '.jpg') }}'/><br></br>
+    <br></br>
+{% endfor %}
+{% endmacro %}

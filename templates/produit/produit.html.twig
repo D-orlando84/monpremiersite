@@ -1,0 +1,13 @@
+{# templates/produit/produit.html.twig #}
+{% extends 'base.html.twig' %}
+{% import './macros/listeProduit.html.twig' as liste %}
+{% block title %}Bienvenue !{% endblock %}
+{% block body %}
+
+<div class="col px-md-2">
+  <h2>Voici les produits disponible</h2>
+</div>
+<td>
+  <tr> {{liste.liste(produit)}} </tr>
+</td>
+{% endblock %}
